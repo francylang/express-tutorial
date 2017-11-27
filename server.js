@@ -47,9 +47,9 @@ app.get('/json', (request, response) => {
   response.status(200).json({"name": "Francy"});
 });
 
-// app.get('/sunsets' (request, response) => {
-//
-// });
+app.get('/sunsets', (request, response) => {
+  response.sendFile('/Users/franceslang/turing/mod4/express-tutorial/public/assets/sunset.jpg')
+});
 
 // Function tells the server to start listening for connections a port
 app.listen(3000, () => {
